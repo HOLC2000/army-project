@@ -4,8 +4,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 5rem 2.5rem;
-  background-color: #3498db;
+  background-color: #BCF1E0;
   color: #fff;
+
+  &__logo{
+    width: 10rem;
+    border-radius: 100px;
+  }
 
   &__title {
     margin: 0;

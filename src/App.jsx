@@ -1,15 +1,12 @@
 import './App.scss';
 import React from 'react';
-import Header from './Components/Header';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
-  Outlet,
 } from 'react-router-dom';
 import Layout from './Components/Layout';
 import ErrorElement from './Components/ErrorElement';
+import Login from './Components/pages/Login';
 
 const router = createBrowserRouter([
   {
@@ -19,11 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'welcome',
-        element: <div>Hello</div>,
+        element: <div>Welcome</div>,
       },
       {
         path: 'log-in',
-        element: <div>Log-in</div>,
+        element: <Login/>,
       },
       {
         path: 'logged-in',
