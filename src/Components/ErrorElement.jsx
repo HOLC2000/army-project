@@ -1,4 +1,5 @@
 import '../scss/ErrorElement.scss';
+import Footer from './Footer';
 import Header from './Header';
 
 const ErrorElement = () => {
@@ -11,6 +12,7 @@ const ErrorElement = () => {
         <h3>Page not found</h3>
         <h1>404</h1>
       </div>
+      <Footer></Footer>
     </>
   );
 };

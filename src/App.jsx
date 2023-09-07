@@ -1,13 +1,13 @@
 import './App.scss';
 import React from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Components/Layout';
 import ErrorElement from './Components/ErrorElement';
 import Login from './Components/pages/Login';
-
+import Welcome from './Components/pages/Welcome';
+import CreateAccount from './Components/pages/CreateAccount';
+import MainPage from './Components/pages/MainPage';
+import CreatePost from './Components/pages/CreatePost';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -15,16 +15,24 @@ const router = createBrowserRouter([
     errorElement: <ErrorElement />,
     children: [
       {
-        path: 'welcome',
-        element: <div>Welcome</div>,
+        path: 'landing-page',
+        element: <Welcome />,
       },
       {
         path: 'log-in',
-        element: <Login/>,
+        element: <Login />,
+      },
+      {
+        path: 'create-account',
+        element: <CreateAccount />,
       },
       {
         path: 'logged-in',
-        element: <div>logeed</div>,
+        element: <MainPage></MainPage>,
+      },
+      {
+        path: 'logged-in/create-post',
+        element: <CreatePost></CreatePost>,
       },
     ],
   },

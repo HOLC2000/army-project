@@ -1,25 +1,24 @@
 /* src/components/Footer.scss */
 
 .footer {
-    color: #fff;
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    gap: 2rem;
-  
-    .footer-logo {
-      img {
-        max-width: 2.5rem; /* Adjust the logo size as needed */
-      }
-    }
-  
-    .footer-content {
-      font-size: 1.2rem;
-      color: black;
+  color: #fff;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 2rem;
 
-      p {
-        margin: 0;
-      }
+  .footer-logo {
+    img {
+      max-width: 2.5rem; /* Adjust the logo size as needed */
     }
   }
-  
+
+  .footer-content {
+    font-size: 1.2rem;
+    color: black;
+
+    p {
+      margin: 0;
+    }
+  }
+}

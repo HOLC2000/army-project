@@ -1,0 +1,47 @@
+.social-media-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  p {
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+
+    button {
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      font-size: 2rem;
+      border-radius: 0.5rem;
+
+      &.like-button {
+        background-color: #ffd787;
+        &.liked {
+          background-color: #ff5733;
+          color: white;
+        }
+      }
+
+      &.comment-button {
+        background-color: #3498db;
+        color: white;
+      }
+
+      &.save-button {
+        background-color: #27ae60;
+        color: white;
+      }
+    }
+  }
+}

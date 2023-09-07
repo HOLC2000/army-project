@@ -1,0 +1,40 @@
+.welcome-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  font-size: 2rem;
+  padding-bottom: 4rem;
+
+  &__signLog {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    &__list {
+      position: relative;
+      &__button,
+      &__button {
+        position: absolute;
+        top: 1px;
+        right: -50px;
+        width: 10rem;
+        font-size: 2rem;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #2ecc71;
+        box-shadow: rgba(0, 0, 0, 0.497) 3px 2px 1rem;
+        transition: all 0.3s, color 0.3s;
+        &:hover {
+          top: -5px;
+          box-shadow: rgba(0, 0, 0, 0.497) 3px 7px 1rem;
+          background-color: #198948;
+        }
+      }
+    }
+  }
+}
